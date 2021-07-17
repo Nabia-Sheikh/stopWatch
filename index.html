@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+
+  <body>
+    <div class="stopwatch">
+      <h1>STOPWATCH By Nabia</h1>
+      <div class="circle">
+        <span class="time" id="display">00:00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay">
+          <img id="playButton" src="icons/play.png" width="65px" height="65px" />
+
+          <img id="pauseButton" src="icons/pause-button.svg" />
+        </button>
+
+        <button class="buttonReset">
+          <img id="resetButton" src="icons/reset-button.svg"  width="65px" height="65px" />
+        </button>
+        <button id="button-lap" class="buttonPlay" style="color: white;">
+          &nbsp;
+          <img id="lap" src="icons/stopWatch.png" width="65px" height="65px">
+        </button>
+      </div>
+     <div>
+      <ul id="laps">
+      </ul>
+     </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
