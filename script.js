@@ -76,13 +76,13 @@ resetButton.addEventListener("click", reset);
 
 buttonLap.onclick = function () {
   lapList.innerHTML +=
-    "<ul id='lapStyle'> <b class='gold'>Lap - " +
+    "<li id='lapStyle' class = 'lapStyle'> <b class='gold'>Lap - " +
     lapCounter +
     " :  </b>" +
     document.getElementById("display").innerHTML +
     "<br>";
   lapCounter++;
-  storeLaps() + " </ul>";
+  storeLaps() + " </li>";
 };
 
 function storeLaps() {
@@ -92,4 +92,3 @@ function storeLaps() {
 function getLaps() {
   lapList.innerHTML = window.localStorage.myLaps;
 }
-getLaps();
